@@ -2,6 +2,8 @@
 
 An ALU design and schematic tool. Define operations by select code, verify the circuit, and inspect the resulting block diagram, chip-level schematic, or pin-by-pin netlist.
 
+**Live app:** [Open LogicBench](https://logic-bench-five.vercel.app/)
+
 ## Features
 
 - Configure 1–8-bit operands, 1–4 select lines, and the adder implementation.
