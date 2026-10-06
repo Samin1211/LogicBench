@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Sans+Condensed:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap');
+@import 'tailwindcss';
+
+:root {
+  --ink: #18181b;
+  --paper: #ffffff;
+  --accent: #4f46e5;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background: #fafafa;
+  color: #18181b;
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* UI text */
+.hand {
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+.title {
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+.num {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-weight: 600;
+}
+
+/* schematic text: narrow technical face, sized down to match the drawn layout */
+svg .hand,
+svg .title {
+  font-family: 'IBM Plex Sans Condensed', 'Inter', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0;
+  font-size-adjust: 0.4;
+}
+svg .num {
+  font-size-adjust: 0.42;
+}
+
+/* only show scrollbars while scrolling */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+*:hover {
+  scrollbar-color: #bbb transparent;
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .sheet {
+    box-shadow: none !important;
+    border: none !important;
+    break-after: page;
+    margin: 0 !important;
+  }
+}

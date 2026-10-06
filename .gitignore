@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.vercel/
+.vite/
+
+.env
+.env.*
+!.env.example
+
+*.tsbuildinfo
+*.log
+logs/
